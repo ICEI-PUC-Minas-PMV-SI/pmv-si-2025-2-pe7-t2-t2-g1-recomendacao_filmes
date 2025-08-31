@@ -151,24 +151,24 @@ Atributos
 O conjunto é composto por quatro arquivos no formato CSV:
 links.csv, movies.csv, ratings.csv e tags.csv.
 
-ratings.csv: Contém as avaliações dos filmes.
+**ratings.csv: Contém as avaliações dos filmes.**
 userId: O ID do usuário anônimo.
 movieId: O ID do filme.
 rating: A avaliação de 5 estrelas, com incrementos de 0,5 estrelas.
 timestamp: O momento da avaliação em segundos desde 1º de janeiro de 1970 (UTC).
 
-tags.csv: Contém as tags aplicadas aos filmes.
+**tags.csv: Contém as tags aplicadas aos filmes.**
 userId: O ID do usuário anônimo.
 movieId: O ID do filme.
 tag: A tag gerada pelo usuário, geralmente uma palavra ou frase curta.
 timestamp: O momento da tag em segundos desde 1º de janeiro de 1970 (UTC).
 
-movies.csv: Contém informações sobre os filmes.
+**movies.csv: Contém informações sobre os filmes.**
 movieId: O ID do filme.
 title: O título do filme, incluindo o ano de lançamento entre parênteses.
 genres: Uma lista de gêneros separados por pipe (|).
 
-links.csv: Contém identificadores que ligam os filmes a outras bases de dados.
+**links.csv: Contém identificadores que ligam os filmes a outras bases de dados.**
 movieId: O ID do filme no MovieLens.
 imdbId: O ID do filme no IMDb.
 tmdbId: O ID do filme no The Movie Database (TMDb).
