@@ -28,7 +28,7 @@ O papel da questão de pesquisa é guiar todas as etapas do projeto — desde a 
 
 ## Objetivos preliminares
 
-Objetivo Geral
+**Objetivo Geral**
 
 Desenvolver e avaliar um sistema de recomendação de filmes utilizando o conjunto de dados MovieLens (ml-latest-small), aplicando modelos de aprendizado de máquina adequados para prever avaliações de usuários e gerar recomendações personalizadas. O sistema deverá explorar tanto a filtragem colaborativa quanto a filtragem baseada em conteúdo, permitindo sugerir filmes que atendam às preferências individuais.
 
@@ -62,39 +62,74 @@ O objetivo aqui não é definir clientes específicos ou papéis exatos dentro d
 
 ## Estado da arte
 
-Nesta seção, descreva abordagens da literatura que tratam problemas semelhantes ao seu. Seu objetivo é documentar métodos, dados, métricas e resultados.
+Trabalhos Relacionados
+1. Sistema de Recomendação com Filtragem baseada em Conteúdo e Colaborativa
 
-### O que levantar (mínimo 5 trabalhos)
-Para **cada estudo encontrado** aderente à temática do grupo, registre de forma objetiva:
-* Problema e contexto: que problema o trabalho buscou resolver e em qual domínio/cenário foi aplicado.
-* Dados (dataset): origem, tamanho, período, variáveis/atributos, pré-processamentos relevantes (faltantes, balanceamento, normalização).
-* Abordagem/algoritmos: algoritmos utilizados e parâmetros principais (quando informados).
-* Métricas de avaliação: quais e por quê (ex.: Acurácia, F1, AUC, RMSE, MAE, etc.).
-* Resultados: principais números, comparações internas, limitações citadas e conclusões.
+Problema e contexto: Desenvolvimento de sistema de recomendação de filmes para previsão de avaliações e sugestões personalizadas.
 
-* Texto-síntese crítico (2–4 parágrafos) respondendo:
-- O que os estudos concordam? Onde divergem?
-- Quais lacunas permanecem (dados, métricas, cenários, limitações técnicas/éticas)?
-- Como seu projeto se alinha aos estudos identificados?
+Dataset: MovieLens 1M; 1 milhão de avaliações de 6.040 usuários sobre 3.700 filmes.
 
-**Dica:** Prefira artigos dos últimos 5 anos ou referências clássicas indispensáveis.
+Abordagem: Filtragem colaborativa via fatoração de matrizes; filtragem baseada em conteúdo utilizando gênero, diretores e atores.
 
-### Ferramentas inteligentes permitidas
-Você pode utilizar: Perplexity, SciSpace, Elicit, Research Rabbit, Litmaps.
-Use-as para descoberta, organização e triagem de literatura. 
+Métricas: RMSE para avaliação de previsões; precisão das recomendações.
 
-**Atenção:** 
-* Sempre acesse a fonte original (PDF/artigo) antes de citar; verifique números e conclusões.
-* Registre DOI/URL oficial e dados bibliográficos completos.
-* Evite “alucinações” das ferramentas: desconfie de referências sem DOI ou que você não consiga localizar oficialmente.
-* Use as ferramentas inteligentes para mapear redes de citação (Research Rabbit), mapas de tópicos (Litmaps), filtrar por período e gerar resumos iniciais (Perplexity/SciSpace/Elicit).
-* Leia os trabalhos mais promissores e descarte estudos fora de escopo.
+Resultados: Conclusão de que a combinação de filtragem colaborativa e baseada em conteúdo melhora a acurácia e a relevância das recomendações.
 
-> **Links Úteis**:
-> - [Google Scholar](https://scholar.google.com/)
-> - [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/home.jsp)
-> - [Science Direct](https://www.sciencedirect.com/)
-> - [ACM Digital Library](https://dl.acm.org/)
+2. Sistema de Recomendação com Opiniões de Usuários e SVD
+
+Problema e contexto: Previsão de preferências em produtos da Amazon, utilizando avaliações e opiniões de usuários.
+
+Dataset: Amazon Reviews; informações de usuários, produtos e avaliações (texto e notas).
+
+Abordagem: Filtragem colaborativa com SVD; Processamento de Linguagem Natural (NLP) para analisar sentimento das opiniões.
+
+Métricas: RMSE para previsões numéricas; análise qualitativa de sentimento.
+
+Resultados: Integração de NLP melhora compreensão do comportamento do usuário; limitações incluem complexidade de processamento de texto.
+
+3. Sistema de Recomendação de Livros com Embeddings de Redes Neurais
+
+Problema e contexto: Recomendação de livros a partir de artigos da Wikipédia e links internos.
+
+Dataset: Dados da Wikipédia sobre livros e links; atributos textuais e relacionais.
+
+Abordagem: Embeddings de redes neurais para representar livros e links em espaço vetorial; classificação supervisionada para prever presença de links.
+
+Métricas: Acurácia na classificação supervisionada; proximidade vetorial como medida de similaridade.
+
+Resultados: Modelos de embedding permitem identificar livros semelhantes; limitação na dependência de dados textuais.
+
+4. Sistema de Recomendação de Filmes – Linha de Base
+
+Problema e contexto: Criação de recomendações simples para filmes utilizando abordagens básicas.
+
+Dataset: TMDB 5000 Movie Dataset; títulos, gêneros, elenco e metadados de filmes.
+
+Abordagem: Recomendação baseada em popularidade e filtragem básica por conteúdo ou colaborativa.
+
+Métricas: Precisão das listas de recomendações; comparações com métodos mais complexos.
+
+Resultados: Sistemas simples funcionam bem em cenários de pequeno porte, mas possuem limitação em personalização.
+
+5. Sistema de Recomendação com Múltiplas Abordagens
+
+Problema e contexto: Comparação de diferentes estratégias de recomendação para prever avaliações e sugerir filmes.
+
+Dataset: MovieLens Full Dataset (26 milhões de avaliações) e Small Dataset (100 mil avaliações); metadados do TMDB.
+
+Abordagem: Popularidade ponderada, filtragem baseada em conteúdo, filtragem colaborativa.
+
+Métricas: RMSE, precisão, recall.
+
+Resultados: Modelos híbridos combinando abordagens distintas obtêm melhores resultados; destaca-se importância de balancear popularidade e personalização.
+
+Síntese Crítica
+
+Os estudos analisados concordam que a combinação de filtragem colaborativa e baseada em conteúdo aumenta significativamente a precisão e a relevância das recomendações em relação a abordagens isoladas. Divergências aparecem no tipo de dados utilizados: alguns trabalhos focam em avaliações explícitas (MovieLens, Amazon), enquanto outros exploram textos ou metadados (livros, TMDB).
+
+As lacunas ainda existentes incluem a generalização para novos usuários e itens (cold start), a limitação de dados demográficos e contexto social, e desafios técnicos relacionados à esparsidade e escalabilidade das matrizes de avaliação. Além disso, poucos trabalhos exploram métricas qualitativas de satisfação do usuário ou impactos éticos de sistemas de recomendação.
+
+O projeto em desenvolvimento se alinha a esses estudos ao implementar um modelo híbrido de recomendação, utilizando filtragem colaborativa e baseada em conteúdo, com o objetivo de prever avaliações e gerar listas personalizadas. Assim, pretende-se explorar o potencial do dataset MovieLens ml-latest-small para validar modelos em cenários acadêmicos e simulações de plataformas de streaming, contribuindo para o estudo de estratégias híbridas e avaliação de desempenho em sistemas de recomendação.
 
 # Descrição do _dataset_ selecionado
 
