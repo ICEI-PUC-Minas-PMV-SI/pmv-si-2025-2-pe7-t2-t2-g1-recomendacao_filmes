@@ -169,7 +169,7 @@ tmdbId: O ID do filme no The Movie Database (TMDb).
 
 
 # Canvas analítico
-
+Link: https://www.figma.com/board/DfTYWvG5s2AOoTGQxmgPt2/Canvas-Pensamento-Anal%C3%ADtico--Community-?node-id=0-1&t=SQ2cJxDeVoCB4ImV-1
 <img width="3000" height="3000" alt="Image" src="https://github.com/user-attachments/assets/fecce827-c4e8-4c78-ae8b-44e62f04a3df"/>
 
 # Vídeo de apresentação da Etapa 01
