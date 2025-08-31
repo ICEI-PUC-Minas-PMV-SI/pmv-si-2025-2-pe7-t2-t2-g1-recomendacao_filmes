@@ -4,7 +4,7 @@ Os sistemas de recomendação desempenham um papel fundamental na forma como int
 
 Este trabalho tem como propósito construir e avaliar um sistema de recomendação utilizando o dataset MovieLens, aplicando técnicas de filtragem colaborativa e filtragem baseada em conteúdo. A análise envolve desde a exploração e preparação dos dados até a implementação de modelos capazes de prever avaliações e sugerir filmes personalizados aos usuários. A escolha desse conjunto de dados se justifica por sua ampla utilização na comunidade acadêmica, sua riqueza de informações e pela oportunidade de aplicar métodos de aprendizado de máquina em um contexto prático e realista.
 
-O público-alvo deste estudo inclui estudantes, pesquisadores e profissionais da área de Ciência de Dados interessados em compreender e implementar sistemas de recomendação, bem como equipes de produto e engenharia que visam melhorar a experiência do usuário em plataformas digitais. Dessa forma, este projeto busca aliar conhecimento teórico e aplicação prática, contribuindo para o entendimento e aprimoramento de soluções de personalização baseadas em dados.
+O público-alvo deste estudo inclui estudantes, usuário final, pesquisadores e profissionais da área de Ciência de Dados interessados em compreender e implementar sistemas de recomendação, bem como equipes de produto que visam melhorar a experiência do usuário em plataformas digitais. Dessa forma, este projeto busca aliar conhecimento teórico e aplicação prática, contribuindo para o entendimento e aprimoramento de soluções de personalização baseadas em dados.
 
 ## Problema
 
