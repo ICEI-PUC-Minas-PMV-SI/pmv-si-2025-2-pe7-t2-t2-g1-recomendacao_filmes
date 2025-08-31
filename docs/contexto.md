@@ -111,13 +111,39 @@ Use-as para descoberta, organização e triagem de literatura.
 
 # Descrição do _dataset_ selecionado
 
-Nesta seção, apresente uma visão clara e objetiva do dataset selecionado, incluindo:
-* Identificação e origem – Nome, link de acesso, fonte (instituição, repositório, API etc.) e licença de uso.
-* Visão geral – Total de registros e atributos, período coberto e breve contextualização.
-* Atributos – Tabela com nome, descrição, tipo, unidade de medida (se aplicável) e exemplos de valores.
-* Qualidade dos dados – Presença de valores faltantes, inconsistências, duplicatas ou outliers.
+Identificação e origem
 
-**Dica:** Seja objetivo, mas inclua detalhes suficientes para que outra pessoa possa entender e reutilizar o conjunto de dados sem buscar informações extras.
+O conjunto de dados utilizado é o MovieLens Small Latest Dataset, hospedado na plataforma Kaggle pelo usuário Shubham Mehta Kaggle+1. Ele é uma versão reduzida da base oficial do MovieLens e está disponível em formato CSV, com aproximadamente 994 KB Kaggle. A licença de uso segue os termos estipulados pelo MovieLens, permitindo utilização para fins acadêmicos e de pesquisa, e exige que o uso seja não comercial.
+
+Visão geral
+Este dataset contém registros produzidos por 610 usuários, que coletivamente geraram 100.836 avaliações e aplicaram 3.683 tags a 9.742 filmes, no período de 29 de março de 1996 a 24 de setembro de 2018 Kaggle+1. Trata-se de uma base compacta, ideal para experimentos, ensino e prototipagem em sistemas de recomendação.
+Atributos
+
+O conjunto é composto por quatro arquivos no formato CSV:
+links.csv, movies.csv, ratings.csv e tags.csv.
+
+ratings.csv: Contém as avaliações dos filmes.
+userId: O ID do usuário anônimo.
+movieId: O ID do filme.
+rating: A avaliação de 5 estrelas, com incrementos de 0,5 estrelas.
+timestamp: O momento da avaliação em segundos desde 1º de janeiro de 1970 (UTC).
+
+tags.csv: Contém as tags aplicadas aos filmes.
+userId: O ID do usuário anônimo.
+movieId: O ID do filme.
+tag: A tag gerada pelo usuário, geralmente uma palavra ou frase curta.
+timestamp: O momento da tag em segundos desde 1º de janeiro de 1970 (UTC).
+
+movies.csv: Contém informações sobre os filmes.
+movieId: O ID do filme.
+title: O título do filme, incluindo o ano de lançamento entre parênteses.
+genres: Uma lista de gêneros separados por pipe (|).
+
+links.csv: Contém identificadores que ligam os filmes a outras bases de dados.
+movieId: O ID do filme no MovieLens.
+imdbId: O ID do filme no IMDb.
+tmdbId: O ID do filme no The Movie Database (TMDb).
+
 
 # Canvas analítico
 
