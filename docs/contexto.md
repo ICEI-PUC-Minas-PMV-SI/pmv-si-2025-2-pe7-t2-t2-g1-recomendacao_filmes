@@ -32,6 +32,12 @@ O papel da questão de pesquisa é guiar todas as etapas do projeto — desde a 
 
 Desenvolver e avaliar um sistema de recomendação de filmes utilizando o conjunto de dados MovieLens (ml-latest-small), aplicando modelos de aprendizado de máquina adequados para prever avaliações de usuários e gerar recomendações personalizadas. O sistema deverá explorar tanto a filtragem colaborativa quanto a filtragem baseada em conteúdo, permitindo sugerir filmes que atendam às preferências individuais.
 
+**Objetivos Específicos**
+
+-Construir um modelo de filtragem colaborativa e baseada em conteúdo que preveja a avaliação que um usuário daria a um filme e recomendar filmes com base em uma escolha.
+-Desenvolver um sistema de recomendação capaz de sugerir uma lista de filmes para um determinado usuário.
+-Avaliar o desempenho do modelo usando metodologias atuais para avaliação e precisão para recomendação.
+
 ## Justificativa
 
 A escolha do conjunto de dados MovieLens (ml-latest-small) justifica-se por sua ampla utilização em pesquisas acadêmicas e práticas relacionadas a sistemas de recomendação. Criado pelo grupo GroupLens da Universidade de Minnesota, esse dataset fornece informações organizadas sobre avaliações e preferências de usuários, o que permite explorar diferentes abordagens de filtragem colaborativa e baseada em conteúdo. Embora seja uma versão reduzida, contendo 100.836 avaliações, 3.683 tags, 9.742 filmes e 610 usuários, ele é suficientemente representativo para a realização de experimentos consistentes e controlados.
