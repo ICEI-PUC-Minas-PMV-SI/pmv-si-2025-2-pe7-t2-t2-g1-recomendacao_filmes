@@ -1,19 +1,18 @@
 # Introdução
 
-Texto descritivo introdutório apresentando a visão geral do projeto a ser desenvolvido considerando o contexto em que ele se insere, os objetivos gerais, a justificativa e o público-alvo do projeto.
+Os sistemas de recomendação desempenham um papel fundamental na forma como interagimos com conteúdos digitais, especialmente em plataformas de streaming, comércio eletrônico e redes sociais. Essas ferramentas têm como principal objetivo prever as preferências dos usuários e oferecer sugestões personalizadas, aumentando tanto a satisfação quanto o engajamento. Nesse cenário, o conjunto de dados MovieLens (ml-latest-small) surge como um recurso de grande relevância para pesquisas e experimentos voltados ao desenvolvimento de algoritmos de recomendação, fornecendo informações sobre avaliações, marcações (tags) e características de filmes.
+
+Este trabalho tem como propósito construir e avaliar um sistema de recomendação utilizando o dataset MovieLens, aplicando técnicas de filtragem colaborativa e filtragem baseada em conteúdo. A análise envolve desde a exploração e preparação dos dados até a implementação de modelos capazes de prever avaliações e sugerir filmes personalizados aos usuários. A escolha desse conjunto de dados se justifica por sua ampla utilização na comunidade acadêmica, sua riqueza de informações e pela oportunidade de aplicar métodos de aprendizado de máquina em um contexto prático e realista.
+
+O público-alvo deste estudo inclui estudantes, pesquisadores e profissionais da área de Ciência de Dados interessados em compreender e implementar sistemas de recomendação, bem como equipes de produto e engenharia que visam melhorar a experiência do usuário em plataformas digitais. Dessa forma, este projeto busca aliar conhecimento teórico e aplicação prática, contribuindo para o entendimento e aprimoramento de soluções de personalização baseadas em dados.
 
 ## Problema
 
-Nesta seção, você deve apresentar o problema que a sua investigação/experimentação busca resolver. Por exemplo, caso o _dataset_ selecionado, seja um _dataset_ que contenha uma série temporal com o preço de diversas ações da bolsa de valores, o problema pode estar relacionado a dificuldade em saber a melhor hora (hora certa??) de comprar ou então, de executar a venda de uma determinada ação.
+O crescimento acelerado do volume de conteúdos audiovisuais disponíveis em plataformas digitais torna cada vez mais difícil para os usuários decidirem o que assistir. A simples disponibilização de catálogos extensos, sem mecanismos inteligentes de filtragem, resulta em uma experiência de navegação pouco eficiente, levando à dispersão do usuário e, em muitos casos, à insatisfação. Nesse cenário, surge a necessidade de sistemas de recomendação capazes de prever as preferências individuais e sugerir filmes de forma personalizada.
 
-Descreva ainda o contexto em que essa aplicação será usada, se houver: empresa parceira, tecnologias etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+O conjunto de dados MovieLens (ml-latest-small) fornece uma base adequada para enfrentar esse desafio, pois reúne informações sobre avaliações e tags aplicadas a milhares de filmes por centenas de usuários. O problema que este projeto busca resolver é justamente a criação de um modelo capaz de prever as avaliações de usuários e recomendar filmes que atendam às suas preferências, explorando tanto a filtragem colaborativa quanto a filtragem baseada em conteúdo.
 
-**Atenção:** Nesta etapa, apresente apenas informações reais e já confirmadas. Não antecipe requisitos técnicos detalhados, funcionalidades específicas ou desenhos de projeto — essa parte será desenvolvida posteriormente.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O contexto de aplicação deste estudo se insere no domínio dos sistemas de recomendação para plataformas de mídia e entretenimento, como serviços de streaming de filmes. Embora o projeto tenha caráter acadêmico e experimental, suas abordagens e resultados podem ser utilizados como base para soluções reais que visam aumentar o engajamento, a retenção e a satisfação do usuário por meio de recomendações mais assertivas.
 
 ## Questão de pesquisa
 
@@ -48,20 +47,13 @@ Objetivo específico 2: Estimar o valor exato da ação ao final do período ana
 
 ## Justificativa
 
-Nesta seção, apresente a importância e a motivação para trabalhar com o conjunto de dados escolhido. Explique por que esse dataset é relevante e como ele se conecta ao problema identificado anteriormente.
+A escolha do conjunto de dados MovieLens (ml-latest-small) justifica-se por sua ampla utilização em pesquisas acadêmicas e práticas relacionadas a sistemas de recomendação. Criado pelo grupo GroupLens da Universidade de Minnesota, esse dataset fornece informações organizadas sobre avaliações e preferências de usuários, o que permite explorar diferentes abordagens de filtragem colaborativa e baseada em conteúdo. Embora seja uma versão reduzida, contendo 100.836 avaliações, 3.683 tags, 9.742 filmes e 610 usuários, ele é suficientemente representativo para a realização de experimentos consistentes e controlados.
 
-Indique:
-* Razões para a escolha dos objetivos específicos – Justifique por que decidiu aprofundar sua investigação nessas metas, relacionando-as ao potencial de solução ou melhoria para o problema.
-* Relevância do estudo do problema – Mostre a importância de compreender e tratar a questão apresentada, tanto no contexto acadêmico quanto no profissional.
-* Impacto social, econômico ou ambiental – Descreva como o problema afeta a sociedade ou um setor específico, buscando sempre quantificar o impacto por meio de dados reais.
+O estudo desse problema é relevante tanto no contexto acadêmico, por possibilitar a aplicação prática de técnicas de Ciência de Dados e Machine Learning, quanto no profissional, já que sistemas de recomendação são amplamente utilizados em plataformas digitais. Empresas como Netflix e Amazon investem bilhões de dólares anualmente em tecnologias de recomendação, e estimativas da McKinsey (2013) indicam que cerca de 35% das vendas da Amazon e 75% do que é assistido na Netflix são resultado direto de recomendações automatizadas. Esses números evidenciam o impacto econômico e estratégico dessas ferramentas.
 
-**Importante:**
-* Apresente números, estatísticas e informações concretas, citando as fontes (relatórios, artigos científicos, portais oficiais etc.).
-* Mantenha a objetividade e a clareza, evitando argumentos genéricos.
-* Construa um texto coeso que conecte o problema, os objetivos e a relevância do trabalho.
+Além disso, compreender e desenvolver modelos eficazes de recomendação tem também um impacto social, pois ajuda usuários a encontrarem conteúdos mais relevantes em meio a grandes volumes de informação, reduzindo a sobrecarga cognitiva e aumentando a satisfação com os serviços digitais. Do ponto de vista econômico, a aplicação de tais modelos melhora métricas essenciais como retenção, engajamento e tempo de permanência em plataformas de mídia, aspectos cruciais para a sustentabilidade financeira dessas empresas.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Assim, os objetivos específicos do projeto — prever avaliações de usuários e recomendar filmes personalizados — foram definidos para responder de forma direta ao problema identificado: a dificuldade de selecionar conteúdos relevantes em grandes catálogos digitais. A investigação nesse contexto contribui para o avanço da área de sistemas de recomendação, com potencial de aplicação tanto em ambientes de pesquisa quanto em soluções práticas voltadas ao mercado de entretenimento e tecnologia.
 
 ## Público-Alvo
 
