@@ -34,9 +34,9 @@ Desenvolver e avaliar um sistema de recomendação de filmes utilizando o conjun
 
 **Objetivos Específicos**
 
--Construir um modelo de filtragem colaborativa e baseada em conteúdo que preveja a avaliação que um usuário daria a um filme e recomendar filmes com base em uma escolha.
--Desenvolver um sistema de recomendação capaz de sugerir uma lista de filmes para um determinado usuário.
--Avaliar o desempenho do modelo usando metodologias atuais para avaliação e precisão para recomendação.
+*Construir um modelo de filtragem colaborativa e baseada em conteúdo que preveja a avaliação que um usuário daria a um filme e recomendar filmes com base em uma escolha.
+*Desenvolver um sistema de recomendação capaz de sugerir uma lista de filmes para um determinado usuário.
+*Avaliar o desempenho do modelo usando metodologias atuais para avaliação e precisão para recomendação.
 
 ## Justificativa
 
