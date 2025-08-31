@@ -178,7 +178,7 @@ tmdbId: O ID do filme no The Movie Database (TMDb).
 
 # Canvas analítico
 
-<img width="2600" height="1900" alt="Image" src="https://github.com/user-attachments/assets/fecce827-c4e8-4c78-ae8b-44e62f04a3df""/>
+<img width="2600" height="1900" alt="Image" src="https://github.com/user-attachments/assets/fecce827-c4e8-4c78-ae8b-44e62f04a3df"/>
 
 # Vídeo de apresentação da Etapa 01
 
