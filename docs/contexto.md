@@ -178,7 +178,7 @@ Video Youtube: https://www.youtube.com/watch?v=Ll1CzfBO3hA&ab_channel=EricHenriq
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho utilizando o padrão ABNT.
+Grouplens Research. MovieLens Latest Small. 2018. Disponível em: https://www.kaggle.com/datasets/grouplens/movielens-latest-small. Acesso em: 31 ago. 2025.
 
 > **Links Úteis**:
 > - [Padrão ABNT PUC Minas](https://portal.pucminas.br/biblioteca/index_padrao.php?pagina=5886)
