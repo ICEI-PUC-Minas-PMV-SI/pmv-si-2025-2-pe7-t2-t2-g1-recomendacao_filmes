@@ -46,7 +46,7 @@ Assim, os objetivos específicos do projeto — prever avaliações de usuários
 
 O projeto de recomendação de filmes tem potencial de impacto em diferentes perfis de usuários e grupos interessados, descritos a seguir:
 
-Usuários finais de plataformas de streaming
+* Usuários finais de plataformas de streaming:
 
 Conhecimentos prévios e familiaridade com tecnologia: Usuários com familiaridade básica a intermediária em recursos digitais, capazes de navegar em aplicativos ou sites de streaming.
 
@@ -54,13 +54,13 @@ Necessidades e expectativas: Esperam receber sugestões de filmes relevantes e p
 
 Possíveis barreiras: Resistência a recomendações irrelevantes ou repetitivas; pouca paciência para explorar opções sem orientação.
 
-Profissionais de produto e design de experiência do usuário (UX/UI)
+* Profissionais de produto e design de experiência do usuário (UX/UI):
 
 Contexto profissional: Responsáveis por otimizar a experiência do usuário em plataformas digitais.
 
 Necessidades e expectativas: Querem compreender como algoritmos de recomendação influenciam o engajamento e a satisfação dos usuários, visando melhorar a interface e a usabilidade da plataforma.
 
-Equipes de tecnologia e ciência de dados
+* Equipes de tecnologia e ciência de dados:
 
 Conhecimentos prévios: Profissionais com experiência em machine learning, manipulação de dados e desenvolvimento de sistemas de recomendação.
 
