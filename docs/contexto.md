@@ -70,7 +70,7 @@ Necessidades e expectativas: Utilizar o projeto como referência para implementa
 
 **Trabalhos Relacionados:**
 
-1. Sistema de Recomendação com Filtragem baseada em Conteúdo e Colaborativa
+**1. Sistema de Recomendação com Filtragem baseada em Conteúdo e Colaborativa**
 
 Problema e contexto: Desenvolvimento de sistema de recomendação de filmes para previsão de avaliações e sugestões personalizadas.
 
@@ -82,7 +82,7 @@ Métricas: RMSE para avaliação de previsões; precisão das recomendações.
 
 Resultados: Conclusão de que a combinação de filtragem colaborativa e baseada em conteúdo melhora a acurácia e a relevância das recomendações.
 
-2. Sistema de Recomendação com Opiniões de Usuários e SVD
+**2. Sistema de Recomendação com Opiniões de Usuários e SVD**
 
 Problema e contexto: Previsão de preferências em produtos da Amazon, utilizando avaliações e opiniões de usuários.
 
@@ -94,7 +94,7 @@ Métricas: RMSE para previsões numéricas; análise qualitativa de sentimento.
 
 Resultados: Integração de NLP melhora compreensão do comportamento do usuário; limitações incluem complexidade de processamento de texto.
 
-3. Sistema de Recomendação de Livros com Embeddings de Redes Neurais
+**3. Sistema de Recomendação de Livros com Embeddings de Redes Neurais**
 
 Problema e contexto: Recomendação de livros a partir de artigos da Wikipédia e links internos.
 
@@ -106,7 +106,7 @@ Métricas: Acurácia na classificação supervisionada; proximidade vetorial com
 
 Resultados: Modelos de embedding permitem identificar livros semelhantes; limitação na dependência de dados textuais.
 
-4. Sistema de Recomendação de Filmes – Linha de Base
+**4. Sistema de Recomendação de Filmes – Linha de Base**
 
 Problema e contexto: Criação de recomendações simples para filmes utilizando abordagens básicas.
 
@@ -118,7 +118,7 @@ Métricas: Precisão das listas de recomendações; comparações com métodos m
 
 Resultados: Sistemas simples funcionam bem em cenários de pequeno porte, mas possuem limitação em personalização.
 
-5. Sistema de Recomendação com Múltiplas Abordagens
+**5. Sistema de Recomendação com Múltiplas Abordagens**
 
 Problema e contexto: Comparação de diferentes estratégias de recomendação para prever avaliações e sugerir filmes.
 
