@@ -44,21 +44,27 @@ Assim, os objetivos específicos do projeto — prever avaliações de usuários
 
 ## Público-Alvo
 
-Nesta seção, descreva quem poderá se beneficiar com a sua investigação, apresentando os diferentes perfis de pessoas ou grupos impactados.
+O projeto de recomendação de filmes tem potencial de impacto em diferentes perfis de usuários e grupos interessados, descritos a seguir:
 
-O objetivo aqui não é definir clientes específicos ou papéis exatos dentro da aplicação, mas sim compreender o perfil dos usuários e partes interessadas. Para isso, considere:
-* Conhecimentos prévios relacionados ao domínio do problema e ao uso de tecnologia;
-* Nível de familiaridade com recursos digitais e possíveis barreiras de uso;
-* Contexto profissional e hierárquico, quando aplicável (ex.: nível de decisão, responsabilidades, área de atuação);
-* Necessidades e expectativas que podem ser atendidas pelo projeto.
+Usuários finais de plataformas de streaming
 
-**Dica:** Seja objetivo e baseie suas descrições em informações reais ou plausíveis para o contexto escolhido. Isso ajudará a manter o foco no desenvolvimento de soluções relevantes e aplicáveis.
+Conhecimentos prévios e familiaridade com tecnologia: Usuários com familiaridade básica a intermediária em recursos digitais, capazes de navegar em aplicativos ou sites de streaming.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Necessidades e expectativas: Esperam receber sugestões de filmes relevantes e personalizadas, economizando tempo na escolha do que assistir e descobrindo títulos que correspondam aos seus interesses.
+
+Possíveis barreiras: Resistência a recomendações irrelevantes ou repetitivas; pouca paciência para explorar opções sem orientação.
+
+Profissionais de produto e design de experiência do usuário (UX/UI)
+
+Contexto profissional: Responsáveis por otimizar a experiência do usuário em plataformas digitais.
+
+Necessidades e expectativas: Querem compreender como algoritmos de recomendação influenciam o engajamento e a satisfação dos usuários, visando melhorar a interface e a usabilidade da plataforma.
+
+Equipes de tecnologia e ciência de dados
+
+Conhecimentos prévios: Profissionais com experiência em machine learning, manipulação de dados e desenvolvimento de sistemas de recomendação.
+
+Necessidades e expectativas: Utilizar o projeto como referência para implementar, testar e validar modelos preditivos que otimizem recomendações, com métricas claras de desempenho (como RMSE, Precision e Recall).
 
 ## Estado da arte
 
