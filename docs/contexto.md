@@ -62,7 +62,8 @@ O objetivo aqui não é definir clientes específicos ou papéis exatos dentro d
 
 ## Estado da arte
 
-Trabalhos Relacionados
+**Trabalhos Relacionados:**
+
 1. Sistema de Recomendação com Filtragem baseada em Conteúdo e Colaborativa
 
 Problema e contexto: Desenvolvimento de sistema de recomendação de filmes para previsão de avaliações e sugestões personalizadas.
@@ -123,7 +124,7 @@ Métricas: RMSE, precisão, recall.
 
 Resultados: Modelos híbridos combinando abordagens distintas obtêm melhores resultados; destaca-se importância de balancear popularidade e personalização.
 
-Síntese Crítica
+**Síntese Crítica**
 
 Os estudos analisados concordam que a combinação de filtragem colaborativa e baseada em conteúdo aumenta significativamente a precisão e a relevância das recomendações em relação a abordagens isoladas. Divergências aparecem no tipo de dados utilizados: alguns trabalhos focam em avaliações explícitas (MovieLens, Amazon), enquanto outros exploram textos ou metadados (livros, TMDB).
 
@@ -133,7 +134,7 @@ O projeto em desenvolvimento se alinha a esses estudos ao implementar um modelo 
 
 # Descrição do _dataset_ selecionado
 
-Identificação e origem
+**Identificação e Origem:**
 
 O conjunto de dados utilizado é o MovieLens Small Latest Dataset, hospedado na plataforma Kaggle pelo usuário Shubham Mehta Kaggle+1. Ele é uma versão reduzida da base oficial do MovieLens e está disponível em formato CSV, com aproximadamente 994 KB Kaggle. A licença de uso segue os termos estipulados pelo MovieLens, permitindo utilização para fins acadêmicos e de pesquisa, e exige que o uso seja não comercial.
 
