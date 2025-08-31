@@ -10,11 +10,11 @@ Recomendação de filmes - Aprendizado em IA
 
 ## Integrantes
 
-* Eduardo henrique Morais Costa
-* Eric
-* Jeziel Silva
-* Victor Hugo
-* Julio 
+* Eduardo Henrique Morais Costa
+* Eric Henrique Marques dos Santos
+* Jeziel Suzana Pires da Silva
+* Júlio dos Reis Firmino
+* Victor Hugo Carvalho de Almeida
 
 ## Orientador
 
