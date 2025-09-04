@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# Sistema de Recomendação de Filmes: Uma Análise do Dataset MovieLens (ml-latest-small)
 
 `CURSO: Sistemas de Informação`
 
