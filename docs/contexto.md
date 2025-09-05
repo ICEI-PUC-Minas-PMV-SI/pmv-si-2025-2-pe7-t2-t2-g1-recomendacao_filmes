@@ -70,7 +70,7 @@ Necessidades e expectativas: Utilizar o projeto como referência para implementa
 
 **Trabalhos Relacionados:**
 
-**1. Sistema de Recomendação com Filtragem baseada em Conteúdo e Colaborativa**
+**1. Sistema de Recomendação com Filtragem baseada em Conteúdo e Colaborativa** (Terminate9298, 2021) [1]
 
 Problema e contexto: Desenvolvimento de sistema de recomendação de filmes para previsão de avaliações e sugestões personalizadas.
 
@@ -82,7 +82,7 @@ Métricas: RMSE para avaliação de previsões; precisão das recomendações.
 
 Resultados: Conclusão de que a combinação de filtragem colaborativa e baseada em conteúdo melhora a acurácia e a relevância das recomendações.
 
-**2. Sistema de Recomendação com Opiniões de Usuários e SVD**
+**2. Sistema de Recomendação com Opiniões de Usuários e SVD** (Saurav9786, 2021) [2]
 
 Problema e contexto: Previsão de preferências em produtos da Amazon, utilizando avaliações e opiniões de usuários.
 
@@ -94,7 +94,7 @@ Métricas: RMSE para previsões numéricas; análise qualitativa de sentimento.
 
 Resultados: Integração de NLP melhora compreensão do comportamento do usuário; limitações incluem complexidade de processamento de texto.
 
-**3. Sistema de Recomendação de Livros com Embeddings de Redes Neurais**
+**3. Sistema de Recomendação de Livros com Embeddings de Redes Neurais** (Willkoehrsen, 2018) [3]
 
 Problema e contexto: Recomendação de livros a partir de artigos da Wikipédia e links internos.
 
@@ -106,7 +106,7 @@ Métricas: Acurácia na classificação supervisionada; proximidade vetorial com
 
 Resultados: Modelos de embedding permitem identificar livros semelhantes; limitação na dependência de dados textuais.
 
-**4. Sistema de Recomendação de Filmes – Linha de Base**
+**4. Sistema de Recomendação de Filmes – Linha de Base** (Ibtesama, 2017) [4]
 
 Problema e contexto: Criação de recomendações simples para filmes utilizando abordagens básicas.
 
@@ -118,7 +118,7 @@ Métricas: Precisão das listas de recomendações; comparações com métodos m
 
 Resultados: Sistemas simples funcionam bem em cenários de pequeno porte, mas possuem limitação em personalização.
 
-**5. Sistema de Recomendação com Múltiplas Abordagens**
+**5. Sistema de Recomendação com Múltiplas Abordagens** (Rounakbanik, 2017) [5]
 
 Problema e contexto: Comparação de diferentes estratégias de recomendação para prever avaliações e sugerir filmes.
 
@@ -142,6 +142,8 @@ O projeto em desenvolvimento se alinha a esses estudos ao implementar um modelo 
 
 **Identificação e Origem:**
 
+DataSet: (MovieLens Latest Small, 2018) [6]
+
 O conjunto de dados utilizado é o MovieLens Small Latest Dataset, hospedado na plataforma Kaggle pelo usuário Shubham Mehta Kaggle+1. Ele é uma versão reduzida da base oficial do MovieLens e está disponível em formato CSV, com aproximadamente 994 KB Kaggle. A licença de uso segue os termos estipulados pelo MovieLens, permitindo utilização para fins acadêmicos e de pesquisa, e exige que o uso seja não comercial.
 
 Visão geral
@@ -151,27 +153,53 @@ Atributos
 O conjunto é composto por quatro arquivos no formato CSV:
 links.csv, movies.csv, ratings.csv e tags.csv.
 
-**ratings.csv: Contém as avaliações dos filmes.**
-userId: O ID do usuário anônimo.
-movieId: O ID do filme.
-rating: A avaliação de 5 estrelas, com incrementos de 0,5 estrelas.
-timestamp: O momento da avaliação em segundos desde 1º de janeiro de 1970 (UTC).
+### **movies.csv**
+Esta tabela contém informações sobre os filmes, incluindo um identificador, o título e os gêneros.
 
-**tags.csv: Contém as tags aplicadas aos filmes.**
-userId: O ID do usuário anônimo.
-movieId: O ID do filme.
-tag: A tag gerada pelo usuário, geralmente uma palavra ou frase curta.
-timestamp: O momento da tag em segundos desde 1º de janeiro de 1970 (UTC).
+* **Linhas:** 9742
+* **Colunas:** 3
+* **Atributos:**
+    * **movieId** (`int64`): Identificador único para cada filme.
+    * **title** (`object`): O título do filme, incluindo o ano de lançamento.
+    * **genres** (`object`): Os gêneros aos quais o filme pertence, separados por `|`.
 
-**movies.csv: Contém informações sobre os filmes.**
-movieId: O ID do filme.
-title: O título do filme, incluindo o ano de lançamento entre parênteses.
-genres: Uma lista de gêneros separados por pipe (|).
+---
 
-**links.csv: Contém identificadores que ligam os filmes a outras bases de dados.**
-movieId: O ID do filme no MovieLens.
-imdbId: O ID do filme no IMDb.
-tmdbId: O ID do filme no The Movie Database (TMDb).
+### **ratings.csv**
+Esta tabela contém as classificações dos usuários para os filmes.
+
+* **Linhas:** 100836
+* **Colunas:** 4
+* **Atributos:**
+    * **userId** (`int64`): Identificador único do usuário que deu a classificação.
+    * **movieId** (`int64`): Identificador do filme que foi classificado.
+    * **rating** (`float64`): A nota dada pelo usuário, em uma escala de 0.5 a 5.0.
+    * **timestamp** (`int64`): O horário em que a classificação foi registrada, em formato Unix.
+
+---
+
+### **tags.csv**
+Esta tabela contém tags de texto que os usuários aplicaram aos filmes.
+
+* **Linhas:** 3683
+* **Colunas:** 4
+* **Atributos:**
+    * **userId** (`int64`): Identificador do usuário que aplicou a tag.
+    * **movieId** (`int64`): Identificador do filme ao qual a tag foi aplicada.
+    * **tag** (`object`): O texto da tag.
+    * **timestamp** (`int64`): O horário em que a tag foi aplicada, em formato Unix.
+
+---
+
+### **links.csv**
+Esta tabela contém identificadores que ligam os filmes a outros bancos de dados externos, como o IMDb e o TMDb.
+
+* **Linhas:** 9742
+* **Colunas:** 3
+* **Atributos:**
+    * **movieId** (`int64`): Identificador do filme.
+    * **imdbId** (`int64`): Identificador do filme no IMDb.
+    * **tmdbId** (`float64`): Identificador do filme no TMDb. Note que 8 filmes nesta coluna não possuem um valor de identificação.
 
 
 # Canvas analítico
@@ -184,4 +212,9 @@ Video Youtube: https://www.youtube.com/watch?v=Ll1CzfBO3hA&ab_channel=EricHenriq
 
 # Referências
 
-Grouplens Research. MovieLens Latest Small. 2018. Disponível em: https://www.kaggle.com/datasets/grouplens/movielens-latest-small. Acesso em: 31 ago. 2025.
+1.  **Terminate9298**. **Movie Recommendation System for Deployment**. Kaggle, 2021. Disponível em: <https://www.kaggle.com/code/terminate9298/movie-recommendation-system-for-deployment/notebook>. Acesso em: 31 ago. 2025.
+2.  **Saurav9786**. **Recommender System using Amazon Reviews**. Kaggle, 2021. Disponível em: <https://www.kaggle.com/code/saurav9786/recommender-system-using-amazon-reviews/notebook>. Acesso em: 31 ago. 2025.
+3.  **Willkoehrsen**. **Neural Network Embedding Recommendation System**. Kaggle, 2018. Disponível em: <https://www.kaggle.com/code/willkoehrsen/neural-network-embedding-recommendation-system/notebook>. Acesso em: 31 ago. 2025.
+4.  **Ibtesama**. **Getting Started with a Movie Recommendation System**. Kaggle, 2017. Disponível em: <https://www.kaggle.com/code/ibtesama/getting-started-with-a-movie-recommendation-system/notebook>. Acesso em: 31 ago. 2025.
+5.  **Rounakbanik**. **Movie Recommender Systems**. Kaggle, 2017. Disponível em: <https://www.kaggle.com/code/rounakbanik/movie-recommender-systems/notebook>. Acesso em: 31 ago. 2025.
+6.  **Grouplens Research**. **MovieLens Latest Small**. 2018. Disponível em: <https://www.kaggle.com/datasets/grouplens/movielens-latest-small>. Acesso em: 31 ago. 2025.
