@@ -153,7 +153,7 @@ Atributos
 O conjunto é composto por quatro arquivos no formato CSV:
 links.csv, movies.csv, ratings.csv e tags.csv.
 
-### **movies.csv**
+#### **movies.csv**
 Esta tabela contém informações sobre os filmes, incluindo um identificador, o título e os gêneros.
 
 * **Linhas:** 9742
@@ -165,7 +165,7 @@ Esta tabela contém informações sobre os filmes, incluindo um identificador, o
 
 ---
 
-### **ratings.csv**
+#### **ratings.csv**
 Esta tabela contém as classificações dos usuários para os filmes.
 
 * **Linhas:** 100836
@@ -178,7 +178,7 @@ Esta tabela contém as classificações dos usuários para os filmes.
 
 ---
 
-### **tags.csv**
+#### **tags.csv**
 Esta tabela contém tags de texto que os usuários aplicaram aos filmes.
 
 * **Linhas:** 3683
@@ -191,7 +191,7 @@ Esta tabela contém tags de texto que os usuários aplicaram aos filmes.
 
 ---
 
-### **links.csv**
+#### **links.csv**
 Esta tabela contém identificadores que ligam os filmes a outros bancos de dados externos, como o IMDb e o TMDb.
 
 * **Linhas:** 9742
