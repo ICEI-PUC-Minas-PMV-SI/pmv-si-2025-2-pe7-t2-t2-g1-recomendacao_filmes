@@ -72,63 +72,43 @@ Necessidades e expectativas: Utilizar o projeto como referência para implementa
 
 **1. Sistema de Recomendação com Filtragem baseada em Conteúdo e Colaborativa** (Terminate9298, 2021) [1]
 
-Problema e contexto: Desenvolvimento de sistema de recomendação de filmes para previsão de avaliações e sugestões personalizadas.
-
-Dataset: MovieLens 1M; 1 milhão de avaliações de 6.040 usuários sobre 3.700 filmes.
-
-Abordagem: Filtragem colaborativa via fatoração de matrizes; filtragem baseada em conteúdo utilizando gênero, diretores e atores.
-
-Métricas: RMSE para avaliação de previsões; precisão das recomendações.
-
-Resultados: Conclusão de que a combinação de filtragem colaborativa e baseada em conteúdo melhora a acurácia e a relevância das recomendações.
+* **Problema e contexto:** Desenvolvimento de sistema de recomendação de filmes para previsão de avaliações e sugestões personalizadas.
+* **Dataset:** MovieLens 1M; 1 milhão de avaliações de 6.040 usuários sobre 3.700 filmes.
+* **Abordagem:** Filtragem colaborativa via fatoração de matrizes; filtragem baseada em conteúdo utilizando gênero, diretores e atores.
+* **Métricas:** RMSE para avaliação de previsões; precisão das recomendações.
+* **Resultados:** Conclusão de que a combinação de filtragem colaborativa e baseada em conteúdo melhora a acurácia e a relevância das recomendações.
 
 **2. Sistema de Recomendação com Opiniões de Usuários e SVD** (Saurav9786, 2021) [2]
 
-Problema e contexto: Previsão de preferências em produtos da Amazon, utilizando avaliações e opiniões de usuários.
-
-Dataset: Amazon Reviews; informações de usuários, produtos e avaliações (texto e notas).
-
-Abordagem: Filtragem colaborativa com SVD; Processamento de Linguagem Natural (NLP) para analisar sentimento das opiniões.
-
-Métricas: RMSE para previsões numéricas; análise qualitativa de sentimento.
-
-Resultados: Integração de NLP melhora compreensão do comportamento do usuário; limitações incluem complexidade de processamento de texto.
+* **Problema e contexto:** Previsão de preferências em produtos da Amazon, utilizando avaliações e opiniões de usuários.
+* **Dataset:** Amazon Reviews; informações de usuários, produtos e avaliações (texto e notas).
+* **Abordagem:** Filtragem colaborativa com SVD; Processamento de Linguagem Natural (NLP) para analisar sentimento das opiniões.
+* **Métricas:** RMSE para previsões numéricas; análise qualitativa de sentimento.
+* **Resultados:** Integração de NLP melhora compreensão do comportamento do usuário; limitações incluem complexidade de processamento de texto.
 
 **3. Sistema de Recomendação de Livros com Embeddings de Redes Neurais** (Willkoehrsen, 2018) [3]
 
-Problema e contexto: Recomendação de livros a partir de artigos da Wikipédia e links internos.
-
-Dataset: Dados da Wikipédia sobre livros e links; atributos textuais e relacionais.
-
-Abordagem: Embeddings de redes neurais para representar livros e links em espaço vetorial; classificação supervisionada para prever presença de links.
-
-Métricas: Acurácia na classificação supervisionada; proximidade vetorial como medida de similaridade.
-
-Resultados: Modelos de embedding permitem identificar livros semelhantes; limitação na dependência de dados textuais.
+* **Problema e contexto:** Recomendação de livros a partir de artigos da Wikipédia e links internos.
+* **Dataset:** Dados da Wikipédia sobre livros e links; atributos textuais e relacionais.
+* **Abordagem:** Embeddings de redes neurais para representar livros e links em espaço vetorial; classificação supervisionada para prever presença de links.
+* **Métricas:** Acurácia na classificação supervisionada; proximidade vetorial como medida de similaridade.
+* **Resultados:** Modelos de embedding permitem identificar livros semelhantes; limitação na dependência de dados textuais.
 
 **4. Sistema de Recomendação de Filmes – Linha de Base** (Ibtesama, 2017) [4]
 
-Problema e contexto: Criação de recomendações simples para filmes utilizando abordagens básicas.
-
-Dataset: TMDB 5000 Movie Dataset; títulos, gêneros, elenco e metadados de filmes.
-
-Abordagem: Recomendação baseada em popularidade e filtragem básica por conteúdo ou colaborativa.
-
-Métricas: Precisão das listas de recomendações; comparações com métodos mais complexos.
-
-Resultados: Sistemas simples funcionam bem em cenários de pequeno porte, mas possuem limitação em personalização.
+* **Problema e contexto:** Criação de recomendações simples para filmes utilizando abordagens básicas.
+* **Dataset:** TMDB 5000 Movie Dataset; títulos, gêneros, elenco e metadados de filmes.
+* **Abordagem:** Recomendação baseada em popularidade e filtragem básica por conteúdo ou colaborativa.
+* **Métricas:** Precisão das listas de recomendações; comparações com métodos mais complexos.
+* **Resultados:** Sistemas simples funcionam bem em cenários de pequeno porte, mas possuem limitação em personalização.
 
 **5. Sistema de Recomendação com Múltiplas Abordagens** (Rounakbanik, 2017) [5]
 
-Problema e contexto: Comparação de diferentes estratégias de recomendação para prever avaliações e sugerir filmes.
-
-Dataset: MovieLens Full Dataset (26 milhões de avaliações) e Small Dataset (100 mil avaliações); metadados do TMDB.
-
-Abordagem: Popularidade ponderada, filtragem baseada em conteúdo, filtragem colaborativa.
-
-Métricas: RMSE, precisão, recall.
-
-Resultados: Modelos híbridos combinando abordagens distintas obtêm melhores resultados; destaca-se importância de balancear popularidade e personalização.
+* **Problema e contexto:** Comparação de diferentes estratégias de recomendação para prever avaliações e sugerir filmes.
+* **Dataset:** MovieLens Full Dataset (26 milhões de avaliações) e Small Dataset (100 mil avaliações); metadados do TMDB.
+* **Abordagem:** Popularidade ponderada, filtragem baseada em conteúdo, filtragem colaborativa.
+* **Métricas:** RMSE, precisão, recall.
+* **Resultados:** Modelos híbridos combinando abordagens distintas obtêm melhores resultados; destaca-se importância de balancear popularidade e personalização.
 
 **Síntese Crítica**
 
