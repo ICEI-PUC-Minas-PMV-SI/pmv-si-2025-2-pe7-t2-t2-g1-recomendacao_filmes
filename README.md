@@ -33,8 +33,8 @@ Recomendação de filmes - Aprendizado em IA
 ## Instruções de utilização
 
 Acesso em Produção (quando disponível)
-* URL: https://<seu-dominio>/...
-* Status: online/homologação
+* URL: Local (Em andamento para Online)
+* Status: Offline
 
 # Código
 
