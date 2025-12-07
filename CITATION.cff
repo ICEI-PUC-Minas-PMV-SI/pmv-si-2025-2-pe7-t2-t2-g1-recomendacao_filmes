@@ -1,29 +1,25 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title:
+title: Sistema de Recomendação de Filmes: Uma Análise do Dataset MovieLens (ml-latest-small)
 authors:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - family-names:
-    given-names:
-  - name-suffix: Professor XXXX
+  - family-names: Costa
+    given-names: Eduardo Henrique Morais
+  - family-names: dos Santos
+    given-names: Eric Henrique Marques
+  - family-names: da Silva
+    given-names: Jeziel Suzana Pires
+  - family-names: Júlio dos Reis
+    given-names: Júlio dos Reis
+  - family-names: de Almeida
+    given-names: Victor Hugo Carvalho
+  - name-suffix: Professor
     affiliation: PUC Minas
-    family-names:
-    given-names:
+    family-names: Tizzo
+    given-names: Neil Paiva
 keywords:
-  -
-  -
-repository-code:
+  - Recomendação de Filmes
+  - Ferramenta que indica filmes recomendados baseado em um banco de dados.
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe7-t2-t2-g1-recomendacao_filmes
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2023-06-30
